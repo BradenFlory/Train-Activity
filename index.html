@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>New York Times Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+
+    </head>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <header>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Anytime is Train Time</h1>
+                    <h2 class="display-8">Choo Choo. Chee Chee.</h2>
+
+                </div>
+            </div>
+        </header>
+        <div class="card">
+            <div class="card-header">
+                Current Train Schedule
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <table style="width:100%">
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </table>
+
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Current Train Schedule
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Train Name</label>
+                        <input type="text" class="form-control" id="trainName" placeholder="Example input">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Another input">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">First Train Time (HH:mm - military time)</label>
+                        <input type="text" class="form-control" id="trainTime" placeholder="Example input">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency" placeholder="Another input">
+                    </div>
+
+                </blockquote>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </div>
+
+
+        <script src="./script.js"></script>
+    </body>
+
+</html>
